@@ -1,0 +1,123 @@
+<div id='xiaomu-question'>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Keywords</th>
+                        <th scope="col">Download link</th>
+                        <th scope="col">Reference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><a href="#User Activity">tracking log (201508-201608)</a></td>
+                    <td>1048 MB</td>
+                    <td>User Activity</td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/data/20150801-20160801-activity.tar.gz">data</a></td>
+                    <td><a href="" target="_blank">AAAI'19</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#User Activity">tracking log (201608-201708)</a></td>
+                    <td>583 MB</td>
+                    <td>User Activity</td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/data/20160801-20170801-activity.tar.gz">data</a></td>
+                    <td><a href="" target="_blank">AAAI'19</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#User Activity">dropout prediction dataset</a></td>
+                    <td>299 MB</td>
+                    <td>Dropout Prediction</td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/data/prediction_data.tar.gz">data</a></td>
+                    <td><a href="" target="_blank">AAAI'19</a></td>
+                </tr>
+                 <tr>
+                    <td><a href="#User Activity">user profile</a></td>
+                    <td>112 MB</td>
+                    <td>User Profile</td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/data/user_info.csv">data</a></td>
+                    <td><a href="" target="_blank">AAAI'19</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#User Activity">course information</a></td>
+                    <td>527 KB</td>
+                    <td>Course information</td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/data/course_info.csv">data</a></td>
+                    <td><a href="" target="_blank">AAAI'19</a></td>
+                </tr>
+
+               </tbody>
+            </table>
+            <div id="detail_infomation">
+                <hr />
+                <div class="dataset">
+                    <a name="User Activity" class="tin">
+                        <h4>User Activity</h4>
+                    </a>
+                    <p>
+                        Data Description:
+                        <br />
+                        These files are the datasets used in the paper "Understanding Dropouts in MOOCs" in AAAI 2019. 
+                        <br />
+                        Tracking log files (201508-201608, 201608-201708) include all users' learning activities in XuetangX platform from 201508 to 201708. These logs are the supporting data of the analyses in the paper.
+                        <br />
+                        Dropout prediction dataset includes the training set and test set used in the paper for the dropout prediction task. 
+                        <br />
+                        User profile is the information of XuetangX users, including gender, birth year and education level.
+                        <br />
+                        Course information includes course start date, course end date, course category and course type. 
+                    </p>
+                    <p>
+                        Tracking log:
+                        <br />
+                        <p>Each json file includes user tracking log in a specific period. For example, 20150801-20151101-raw_user_activity.json is the tracking log from 20150801 to 20151101. </p>
+
+                        <p>The format of these json files is as follow:</p>
+                        <p>Each json file includes user tracking log in a specific period. For example, 20150801-20151101-raw_user_activity.json is the tracking log from 20150801 to 20151101. The format of these json files is as follow:</p>
+                        <p>[</p>
+                        <p>&nbsp; &nbsp; [course_id,</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; {user_id:</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { session_id:</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [activity_event_1, time_1],</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [activity_event_2, time_2],</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ... ],</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ... },</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; ...}</p>
+                        <p>&nbsp; &nbsp; ],</p>
+                        <p>...]</p>
+
+                        dropout prediction dataset:
+                        <br />
+                        <p>train_log.csv, test_log.csv:</p>
+                        <p>1st column: enroll_id, the id of (user, course) pair.</p>
+                        <p>2nd column: username, the id of user.</p>
+                        <p>3rd column: course_id, the id of course.</p>
+                        <p>4th column: session_id, the id of session.</p>
+                        <p>5th column: action, the type of user activity.</p>
+                        <p>6th column: object, the corresonding object of the action.</p>
+                        <p>7th column: time, the occurence time of the action.</p>
+                        <p>&nbsp;</p>
+                        <p>train_truth.csv, test_truth.csv:</p>
+                        <p>1st column: enroll_id, the id of (user, course) pair</p>
+                        <p>2nd column: truth, the label of user's dropout (1: dropout, 0: non-dropout).</p>
+                         
+                        user profile:
+                        </br>
+                        <p>1st column: user_id, the id of user.</p>
+                        <p>2nd column: gender, the gender of user.</p>
+                        <p>3st column: education, user's education level.</p>
+                        <p>4th column: birth, user's birth year.</p>
+                        
+                        course information:
+                        </br>
+                        <p>1st column: id, the id (number) of course, which is used in dropout prediction dataset.</p>
+                        <p>2nd column: course_id, the id (string) of course, which is used in tracking log.</p>
+                        <p>3st column: start, course start time.</p>
+                        <p>4th column: end, course end time.</p>
+                        <p>5th column: course_type, course mode (0: instructor-paced course, 1: self-paced course).</p>
+                        <p>6th column: category, the category of course.</p>
+                    </div>
+            </div>
+</div>
+ 

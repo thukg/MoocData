@@ -1,0 +1,55 @@
+<div id='concept-extraction'>
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Size</th>
+                <th scope="col">Keywords</th>
+                <th scope="col">Download link</th>
+                <th scope="col">Reference</th>
+            </tr>
+        </thead>
+        <tbody>
+         <tr>
+            <td><a href="#Course Concept Extraction">Course Concept Extraction</a></td>
+            <td>21.6 MB</td>
+            <td>Concept Extraction, Key-phrase Extraction</td>
+            <td><a href="http://lfs.aminer.cn/misc/moocdata/data/concept-extraction-mooc-DataCollections.zip">data</a></td>
+            <td><a href="https://aclanthology.coli.uni-saarland.de/papers/I17-1088/i17-1088" target="_blank">IJCNLP'17</a></td>
+         </tr>
+        </tbody>
+    </table>
+    <div id="detail_infomation">
+        <hr />
+        <a name="Course Concept Extraction" class="tin">
+                <h4>Course Concept Extraction</h4>
+        </a>
+            <p>
+                This is the whole dataset of paper "Course Concept Extraction in MOOCs via Embedding-Based Graph Propagation" in IJCNLP 2017.
+            </p>
+            <p>
+                CSEN,CSZH,EcoEN,EcoZH are evaluation datasets mentioned in the paper.
+                All data file are in standard json format.
+                Each dataset contains two file: Captions and Candidates.
+            </p>
+            <p>
+                1. .captions file
+                <br />
+                Video captions of MOOC courses in the dataset, each line represents a video.
+                The text has been tokenized and labeled with POS tagging.
+                For CSZH and EcoZH, we employ Ansj(https://github.com/NLPchina/ansjseg) to perform word segmentation and POS tagging.
+                For CSEN and EcoEN, we select the POS tagger implemented by the Stanford NLP group.(http://nlp.stanford.edu/software/tagger.shtml).
+            </p>
+            <p>
+                2. .candidates file
+                <br />
+                Candidate course concepts extracted from the dataset.
+                The "label" field is the human annotated label for a candidate.
+                "1" stands for a course concept and "0" otherwise.
+            </p>
+            <p>
+                You may use the dataset to test your concept/key-phrase Extraction model or do some more talent jobs.
+            </p>
+        </div>
+    </div>
+</div>

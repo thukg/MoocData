@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link href="/static/css/share.css" rel="stylesheet"/>
+    <link href="/static/css/mkg_page.css" rel="stylesheet"/>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <nav class="nav flex-column" id="mkg-nav" style="position:fixed;">
+        <a class="nav-link" href="#top" role="tab">返回顶部</a>
+        <a class="nav-link" href="#subfields" role="tab">下位领域&概念树</a>
+    </nav>
+    <a name="top" />
+    <div id="container">
+        <div id="header">
+            <h1 align="center">{{ info['title'] }}</h1>
+        </div>
+        {{ info['intro']|safe }}
+        {{ info['buttons_html']|safe }}
+        <hr />
+        <p>
+            <a name="subfields" />
+            <b>部分下位领域&概念树：</b>
+        </p>
+        <svg id="svg">
+        </svg>
+        {{ copyright|safe }}
+    </div>
+    <script type="text/javascript">
+        $.get("/mooc_knowledge_graph/get_data/{{ info['title'] }}", function(data) {
+            data = $.parseJSON(data);
+            if (data.name == 'MOOC Knowledge Graph')
+                data.name = 'root';
+            function autosize(svg) {
+              document.body.appendChild(svg);
+              const box = svg.getBBox();
+              document.body.removeChild(svg);
+              svg.setAttribute("viewBox", `${box.x} ${box.y} ${box.width} ${box.height}`);
+              return svg;
+            }
+            width = 930;
+            tree = data => {
+              root = d3.hierarchy(data);
+              root.dx = 10;
+              root.dy = width / (root.height + 1);
+              height = root.height;
+              return d3.tree().nodeSize([root.dx, root.dy])(root);
+            };
+            var root = tree(data), x0 = Infinity, x1 = -x0;
+            root.each(d => {
+                if (d.x > x1) x1 = d.x;
+                if (d.x < x0) x0 = d.x;
+                });
+            var svg = d3.select("#svg")
+                .style("height", x1 - x0 + root.dx * 2);
+            var g = svg.append("g")
+                .attr("font-family", "sans-serif")
+                .attr("font-size", 10)
+                .attr("transform", `translate(${root.dy / 3},${root.dx - x0})`);
+            var link = g.append("g")
+                .attr("fill", "none")
+                .attr("stroke", "#555")
+                .attr("stroke-opacity", 0.4)
+                .attr("stroke-width", 1.5)
+                .selectAll("path")
+                .data(root.links())
+                .join("path")
+                .attr("d", d3.linkHorizontal()
+                .x(d => d.y)
+                .y(d => d.x));
+            var node = g.append("g")
+                .attr("stroke-linejoin", "round")
+                .attr("stroke-width", 3)
+                .selectAll("g")
+                .data(root.descendants())
+                .join("g")
+                .attr("transform", d => `translate(${d.y},${d.x})`);
+                node.append("circle")
+                .attr("fill", d => d.children ? "#555" : "#999")
+                .attr("r", 2.5);
+                node.append("text")
+                .attr("dy", "0.31em")
+                .attr("x", d => d.children ? -6 : 6)
+                .attr("text-anchor", d => d.children ? "end" : "start")
+                .text(d => d.data.name)
+                .clone(true).lower()
+                .attr("stroke", "white");
+        });
+    </script>
+</body>
+</html>

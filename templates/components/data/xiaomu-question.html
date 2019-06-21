@@ -1,0 +1,66 @@
+<div id='xiaomu-question'>
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Size</th>
+                <th scope="col">Keywords</th>
+                <th scope="col">Download link</th>
+                <th scope="col">Reference</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><a href="#Xiaomu Questioning">Xiaomu Questioning</a></td>
+            <td>237.7 MB</td>
+            <td>Bandit Learning, Implicit Feedback</td>
+            <td><a href="http://lfs.aminer.cn/misc/moocdata/data/xiaomu_questioning.zip">data</a></td>
+            <td><a href="https://papers.nips.cc/paper/7958-bandit-learning-with-implicit-feedback" target="_blank">NeurIPS'18</a></td>
+        </tr>
+       </tbody>
+    </table>
+    <div id="detail_infomation">
+        <hr />
+        <div class="dataset">
+            <a name="Xiaomu Questioning" class="tin">
+                <h4>Xiaomu Questioning</h4>
+            </a>
+            <p>
+                Data Description:
+                <br />
+                Xiaomu Questioning is an innovative feature which actively and adaptively displays banner containing questions in lecture videos,
+                aiming at improving learners' engagement.
+                <br />
+                Learner is allowed to click on the displayed banner so as to see answer to the question.
+                <br />
+                Random selection strategy on positions and questions are used and the data of displayed question/clicks/feature/candidate items are collected.
+                <br />
+                The data is in .pkl form and must be deserialized by the package "pickle" of python3.
+            </p>
+            <p>
+                Example code:
+                <br />
+                > data = pickle.load(open(“rawData.pkl”, ‘rb’))
+                <br />
+                The data is collected from Xiaomu Questioning, consisting of 7 columns.
+                <br />
+                The description of each column:
+                <br />
+                1st column: vidx - integer, the ID of video;
+                <br />
+                2nd column: aid - integer, the ID of recommended question;
+                <br />
+                3rd column: reward - integer, the observed feedback(1 for click, 0 for non-click)
+                <br />
+                4th column: candidate list of arms - list of integer, the available candidates at this decision point;
+                <br />
+                5th column: feature of relevance - two dimensional numpy array, each row representing the corresponding arm in the candidate list;
+                <br />
+                6th column: feature of examination - two dimensional numpy array, each row representing the corresponding arm in the candidate list;
+                <br />
+                7th column: position of the recommended arm - integer;
+            </p>
+        </div>
+    </div>
+</div>
+ 

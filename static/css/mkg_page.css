@@ -1,0 +1,27 @@
+#mkg-nav {
+    width: 100px;
+    top: 80%;
+    right: 0;
+}
+
+.my-button {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+#header {
+    margin-top: 20px;
+}
+
+#svg {
+    width: 100%;
+}
+
+#buttons {
+    margin: 10px 10px 10px 10px;
+}
+
+.nav-link {
+    text-align: right;
+}

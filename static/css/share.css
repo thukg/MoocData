@@ -1,0 +1,23 @@
+#container {
+    max-width: 980px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#page_header {
+    margin-top: 10px;
+}
+
+#right_zone {
+    margin-top: 10px;
+    float: right;
+}
+
+#copyright {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+    color: #888;
+}

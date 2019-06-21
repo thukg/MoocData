@@ -1,0 +1,63 @@
+<div id='xiaomu-question'>
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Size</th>
+                <th scope="col">Keywords</th>
+                <th scope="col">Download link</th>
+                <th scope="col">Reference</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><a href="#Course Prerequisite Relation">Course Prerequisite Relation</a></td>
+            <td>3.99 MB</td>
+            <td>Prerequisite Relation, Relation Learning</td>
+            <td><a href="http://lfs.aminer.cn/misc/moocdata/data/acl17-prerequisite-relation.rar">data&amp;code</a></td>
+            <td><a href="https://aclanthology.coli.uni-saarland.de/papers/P17-1133/p17-1133" target="_blank">ACL'17</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <div id="detail_infomation">
+        <hr />
+        <div class="dataset">
+            <a name="Course Prerequisite Relation" class="tin">
+                <h4>Course Prerequisite Relation</h4>
+            </a>
+            <p>
+                This is the dataset of paper "Prerequisite Relation Learning for Concepts in MOOCs" in ACL 2017.
+            </p>
+            <p>
+                DSA and ML are the dataset of different data of course category "Data structure and Algorithm" and "Machine Learning".
+                Each dataset contains three kinds of file: Captions, Core_concepts and Labeled file.
+            </p>
+            <p>
+                1. Captions file
+                <br />
+                Video captions of MOOC courses in the dataset, each line represents a video.
+                Captions are in standard json format, each domain contains at least two courses.
+                The text has been tokenized and labeled with POS tagging.
+                We select the POS tagger implemented by the Stanford NLP group.(http://nlp.stanford.edu/software/tagger.shtml).
+            </p>
+            <p>
+                2. Core_concepts file
+                <br />
+                Course core concepts extracted from the dataset.
+                Each line represents a core concept of the courses' domain.
+            </p>
+            <p>
+                3. Labeled file
+                <br />
+                The Prerequisite Relation extracted from the dataset.
+                Each line contains three items. Head concept, Tail concept and label.
+                The "label" field is the human annotated label for a Relation.
+                "1" stands for the head and tail concepts have the prerequisite relation.
+                And w-label represents the A-B and B-A are both prerequisite.
+            </p>
+            <p>
+                You may use the dataset to test your prerequisite relation Extraction model or do some more talent jobs.
+            </p>
+        </div>
+    </div>
+</div> 

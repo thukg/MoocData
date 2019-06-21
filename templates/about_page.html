@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="/static/css/share.css" rel="stylesheet"/>
+    <link href="/static/css/about_page.css" rel="stylesheet"/>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div id="container">
+        {{ header|safe }}
+        <script type="text/javascript">
+            $("li#about-href").addClass("active");
+        </script>
+        <hr />
+        <div id="content">
+            <div id="introduction">
+                <h5>Introduction</h5>
+                <p>
+                    MoocData is a platform for providing online education data and competitions for researchers based on the MOOC site XuetangX of Tsinghua University. We are committed to helping you solve the intellectual problem of education and create a better online education environment.
+                    <br />
+                    With MoocData, you can use your wisdom and talents to solve interesting real-life education issues, whether you are an educator, an IT-related person or a student.
+                </p>
+            </div>
+            <hr />
+            <div id="group_members">
+                <h5>Group members</h5>
+                    <div>
+                        敬峡(Xia Jing), Master(graduated).
+                        <br />
+                        李朝阳(Chaoyang Li), Master(graduated).
+                        <br />
+                        王笑尘(Xiaochen Wang), Master(graduated).
+                        <br />
+                        张菡(Han Zhang), Master(graduated).
+                        <br />
+                        陈振寰(Zhenhuan Chen), Master(graduated).
+                        <br />
+                        漆毅(Yi Qi), Master(graduated).
+                        <br />
+                        宋正阳(Zhengyang Song), Master(graduated).
+                    </div>
+                    <br />
+                    <div>
+                        冯文政(Wenzheng Feng), Ph.D. student.
+                        <br />
+                        罗干(Gan Luo), Master's student.
+                        <br />
+                        于济凡(Jifan Yu), Master's student.
+                        <br />
+                        郭书宇(Shuyu Guo), Master's student.
+                    </div>
+                    <br />
+                    <div>
+                        钟清扬(Qingyang Zhong), undergraduate.
+                        <br />
+                        王辰昱(Chenyu Wang), Bachelor of BUAA.
+                        <br />
+                        肖桐(Tong Xiao), Bachelor of BUAA.
+                    </div>
+            </div>
+        </div>
+        {{ copyright|safe }}
+    </div>
+</body>
+</html>
