@@ -100,7 +100,7 @@
 {"field": "力学通类", "subfields": [], "routes": ["力学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 124, "is_labeled": false}
 {"field": "固体力学", "subfields": [], "routes": ["力学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 220, "is_labeled": false}
 {"field": "流体力学", "subfields": [], "routes": ["力学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 152, "is_labeled": false}
-{"field": "化学", "subfields": ["分析化学", "放射化学", "无机化学", "有机化学", "物理化学", "高分子化学"], "routes": ["MOOC Knowledge Graph"], "grand_son_number": 32, "all_son_number": 6316, "is_labeled": false}
+{"field": "化学", "subfields": ["分析化学", "放射化学", "无机化学", "有机化学", "物理化学", "高分子化学"], "routes": ["MOOC Knowledge Graph"], "grand_son_number": 32, "all_son_number": 6316, "is_labeled": true}
 {"field": "分析化学", "subfields": ["一般术语", "仪器分析", "化学分析", "化学计量学"], "routes": ["化学", "MOOC Knowledge Graph"], "grand_son_number": 8, "all_son_number": 1904, "is_labeled": false}
 {"field": "一般术语", "subfields": [], "routes": ["分析化学", "化学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 245, "is_labeled": false}
 {"field": "仪器分析", "subfields": ["分子光谱分析", "原子光谱分析", "核磁共振分析", "热分析", "电化学分析", "能谱分析", "色谱分析", "质谱分析"], "routes": ["分析化学", "化学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 1277, "is_labeled": false}
@@ -250,7 +250,7 @@
 {"field": "水文地质学", "subfields": [], "routes": ["地质学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 159, "is_labeled": false}
 {"field": "矿床地质学", "subfields": [], "routes": ["地质学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 243, "is_labeled": false}
 {"field": "矿物学", "subfields": [], "routes": ["地质学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 196, "is_labeled": false}
-{"field": "建筑学", "subfields": ["中外建筑历史", "城乡规划", "市场管理与工程建设程序", "建筑教育", "建筑材料及制品", "建筑物理", "建筑类型及组成", "建筑经济", "建筑结构", "建筑设备与系统", "建筑设计", "建筑防护", "总论", "风景园林"], "routes": ["MOOC Knowledge Graph"], "grand_son_number": 101, "all_son_number": 6299, "is_labeled": false}
+{"field": "建筑学", "subfields": ["中外建筑历史", "城乡规划", "市场管理与工程建设程序", "建筑教育", "建筑材料及制品", "建筑物理", "建筑类型及组成", "建筑经济", "建筑结构", "建筑设备与系统", "建筑设计", "建筑防护", "总论", "风景园林"], "routes": ["MOOC Knowledge Graph"], "grand_son_number": 101, "all_son_number": 6299, "is_labeled": true}
 {"field": "中外建筑历史", "subfields": ["中国古代建筑史", "中国近代建筑", "外国19~20世纪建筑", "外国19世纪末叶以前建筑", "文化遗产"], "routes": ["建筑学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 354, "is_labeled": false}
 {"field": "中国古代建筑史", "subfields": [], "routes": ["中外建筑历史", "建筑学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 161, "is_labeled": false}
 {"field": "中国近代建筑", "subfields": [], "routes": ["中外建筑历史", "建筑学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 14, "is_labeled": false}
@@ -362,7 +362,7 @@
 {"field": "种植设计", "subfields": [], "routes": ["风景园林", "建筑学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 9, "is_labeled": false}
 {"field": "通用术语", "subfields": [], "routes": ["风景园林", "建筑学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 7, "is_labeled": false}
 {"field": "风景名胜区", "subfields": [], "routes": ["风景园林", "建筑学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 8, "is_labeled": false}
-{"field": "心理学", "subfields": ["人格心理学", "军事心理学", "医学心理学", "发展心理学", "咨询心理学", "工程心理学", "心理统计与测量", "总论", "教育心理学", "法律心理学", "理论心理学与心理学史", "生理心理学", "社会心理学", "管理心理学", "认知与实验心理学", "运动心理学"], "routes": ["MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 1926, "is_labeled": false}
+{"field": "心理学", "subfields": ["人格心理学", "军事心理学", "医学心理学", "发展心理学", "咨询心理学", "工程心理学", "心理统计与测量", "总论", "教育心理学", "法律心理学", "理论心理学与心理学史", "生理心理学", "社会心理学", "管理心理学", "认知与实验心理学", "运动心理学"], "routes": ["MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 1926, "is_labeled": true}
 {"field": "人格心理学", "subfields": [], "routes": ["心理学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 97, "is_labeled": false}
 {"field": "军事心理学", "subfields": [], "routes": ["心理学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 52, "is_labeled": false}
 {"field": "医学心理学", "subfields": [], "routes": ["心理学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 147, "is_labeled": false}
@@ -422,7 +422,7 @@
 {"field": "高校招生与培养", "subfields": [], "routes": ["高等教育", "教育学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 57, "is_labeled": false}
 {"field": "高等学校管理", "subfields": [], "routes": ["高等教育", "教育学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 59, "is_labeled": false}
 {"field": "高等教育及高等教育学科", "subfields": [], "routes": ["高等教育", "教育学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 32, "is_labeled": false}
-{"field": "数学", "subfields": ["代数学", "信息论", "几何学", "分析学", "微分方程", "数值分析", "数学通类", "数理逻辑・数学基础", "概率论", "泛函分析", "组合学・一般数学系统", "运筹学"], "routes": ["MOOC Knowledge Graph"], "grand_son_number": 48, "all_son_number": 7721, "is_labeled": false}
+{"field": "数学", "subfields": ["代数学", "信息论", "几何学", "分析学", "微分方程", "数值分析", "数学通类", "数理逻辑・数学基础", "概率论", "泛函分析", "组合学・一般数学系统", "运筹学"], "routes": ["MOOC Knowledge Graph"], "grand_son_number": 48, "all_son_number": 7721, "is_labeled": true}
 {"field": "代数学", "subfields": ["代数几何学"], "routes": ["数学", "MOOC Knowledge Graph"], "grand_son_number": 16, "all_son_number": 1739, "is_labeled": false}
 {"field": "代数几何学", "subfields": ["交换环", "代数K理论", "代数几何学", "代数群", "同调代数", "型", "域・多项式", "拓扑群", "李群", "模论", "算术", "线性代数", "结合环", "群论", "范畴论", "非结合环"], "routes": ["代数学", "数学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 1738, "is_labeled": false}
 {"field": "交换环", "subfields": [], "routes": ["代数几何学", "代数学", "数学", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 82, "is_labeled": false}
@@ -1145,7 +1145,7 @@
 {"field": "螺旋输送机", "subfields": [], "routes": ["输送机械", "物料搬运机械", "机械工程", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 23, "is_labeled": false}
 {"field": "装置和零部件", "subfields": [], "routes": ["输送机械", "物料搬运机械", "机械工程", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 6, "is_labeled": false}
 {"field": "辊子输送机", "subfields": [], "routes": ["输送机械", "物料搬运机械", "机械工程", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 10, "is_labeled": false}
-{"field": "材料科学技术", "subfields": ["半导体材料", "复合材料", "天然材料", "无机非金属材料", "材料科学技术基础", "生物材料", "金属材料", "高分子材料"], "routes": ["MOOC Knowledge Graph"], "grand_son_number": 41, "all_son_number": 4927, "is_labeled": false}
+{"field": "材料科学技术", "subfields": ["半导体材料", "复合材料", "天然材料", "无机非金属材料", "材料科学技术基础", "生物材料", "金属材料", "高分子材料"], "routes": ["MOOC Knowledge Graph"], "grand_son_number": 41, "all_son_number": 4927, "is_labeled": true}
 {"field": "元素半导体材料", "subfields": [], "routes": ["半导体材料", "仪器仪表材料", "仪器仪表", "机械工程", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 97, "is_labeled": false}
 {"field": "化合物半导体材料", "subfields": [], "routes": ["半导体材料", "仪器仪表材料", "仪器仪表", "机械工程", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 40, "is_labeled": false}
 {"field": "半导体微结构材料及器件", "subfields": [], "routes": ["半导体材料", "仪器仪表材料", "仪器仪表", "机械工程", "MOOC Knowledge Graph"], "grand_son_number": 0, "all_son_number": 54, "is_labeled": false}

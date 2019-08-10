@@ -1,1 +1,0 @@
-{"name": "仪表盘、操纵柜", "children": [{"name": "仪表盘", "en": "instrument panel", "superfield": "机械工程"}, {"name": "操纵柜", "en": "console", "superfield": "机械工程"}, {"name": "独立式组合仪表", "en": "compositive cluster", "superfield": "机械工程"}, {"name": "组合仪表", "en": "instrument cluster", "superfield": "机械工程"}, {"name": "集成式组合仪表", "en": "integrated cluster", "superfield": "机械工程"}]}

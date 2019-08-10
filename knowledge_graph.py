@@ -16,6 +16,15 @@ def preload():
                 continue
             a = json.loads(line)
             info[a['field']] = a
+    with open(prev + 'data.json', 'r', encoding='utf-8') as f:
+        tmp = f.read().split('\n')
+        for line in tmp:
+            if line == '':
+                continue
+            a = json.loads(line)
+            field = a['name']
+            info[field]['data'] = a
+            info[field]['concept-number'] = get_concept_number(line)
 
 def load_info(field):
     if field not in info:
@@ -63,17 +72,9 @@ def load_info(field):
     return res
 
 def load_data(field):
-    if field not in info:
+    global info
+    if field not in info or 'data' not in info[field]:
         return None
-    if 'data' not in info[field]:
-        file = prev + 'data/' + field + '.json'
-        if not os.path.exists(file):
-            return None
-        with open(file, 'r', encoding='utf-8') as f:
-            raw = f.read()
-            data = json.loads(raw)
-            info[field]['data'] = data
-            info[field]['concept-number'] = get_concept_number(raw)
     return info[field]['data']
 
 preload()
