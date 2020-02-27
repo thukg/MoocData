@@ -59,12 +59,12 @@ def load_info(field):
         pre['intro'] = code + text
     res['intro'] = pre['intro']
     if len(pre['subfields']) > 0:
-        hint = '' if field != 'MOOC Knowledge Graph' else '（灰色为未标注）'
-        html = '<hr /><div id="buttons"><p><b>下位领域{}：</b></p>'.format(hint)
+        html = '<hr /><div id="buttons"><p><b>下位领域：</b></p>'
         for button in pre['subfields']:
-            labeled = False if button not in info else info[button]['is_labeled']
-            labeled = 'btn-success' if labeled else 'btn-light'
-            html += '<a href="/mooc_knowledge_graph/{}"><button type="button" class="btn {} my-button">{}</button></a>'.format(button, labeled, button)
+            #labeled = False if button not in info else info[button]['is_labeled']
+            #color = 'btn-success' if labeled else 'btn-light'
+            color = 'btn-light'
+            html += '<a href="/mooc_knowledge_graph/{}"><button type="button" class="btn {} my-button">{}</button></a>'.format(button, color, button)
         html += '</div>'
     else:
         html = ''
