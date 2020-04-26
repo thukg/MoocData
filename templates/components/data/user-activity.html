@@ -13,39 +13,45 @@
                 <tr>
                     <td><a href="#User Activity">tracking log (201508-201608)</a></td>
                     <td>1048 MB</td>
-                    <td>User Activity</td>
+                    <td>Activity Log</td>
                     <td><a href="http://lfs.aminer.cn/misc/moocdata/data/20150801-20160801-activity.tar.gz">data</a></td>
                     <td><a href="#Reference">AAAI'19</a></td>
                 </tr>
                 <tr>
-                    <td><a href="#User Activity">tracking log (201608-201708)</a></td>
+                    <td><a href="#User Activity">Tracking Log (201608-201708)</a></td>
                     <td>583 MB</td>
-                    <td>User Activity</td>
+                    <td>Activity Log</td>
                     <td><a href="http://lfs.aminer.cn/misc/moocdata/data/20160801-20170801-activity.tar.gz">data</a></td>
                     <td><a href="#Reference">AAAI'19</a></td>
                 </tr>
                 <tr>
-                    <td><a href="#User Activity">dropout prediction dataset</a></td>
+                    <td><a href="#User Activity">Dropout Prediction Dataset</a></td>
                     <td>299 MB</td>
-                    <td>Dropout Prediction</td>
+                    <td>Dropout Prediction Dataset</td>
                     <td><a href="http://lfs.aminer.cn/misc/moocdata/data/prediction_data.tar.gz">data</a></td>
                     <td><a href="#Reference">AAAI'19</a></td>
                 </tr>
                  <tr>
-                    <td><a href="#User Activity">user profile</a></td>
+                    <td><a href="#User Activity">User Profile</a></td>
                     <td>112 MB</td>
                     <td>User Profile</td>
                     <td><a href="http://lfs.aminer.cn/misc/moocdata/data/user_info.csv">data</a></td>
                     <td><a href="#Reference">AAAI'19</a></td>
                 </tr>
                 <tr>
-                    <td><a href="#User Activity">course information</a></td>
+                    <td><a href="#User Activity">Course Information</a></td>
                     <td>527 KB</td>
-                    <td>Course information</td>
+                    <td>Course Information</td>
                     <td><a href="http://lfs.aminer.cn/misc/moocdata/data/course_info.csv">data</a></td>
                     <td><a href="#Reference">AAAI'19</a></td>
                 </tr>
-
+                <tr>
+                    <td><a href="#User Activity">KDDCUP Data</a></td>
+                    <td>158 MB</td>
+                    <td>KDDCUP Data</td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/data/kddcup15.zip">data</a></td>
+                    <td><a href="#Reference">AAAI'19</a></td>
+                </tr>
                </tbody>
             </table>
             <div id="detail_infomation">
@@ -55,8 +61,6 @@
                         <h4>User Activity</h4>
                     </a>
                     <p>
-                        Data Description:
-                        <br />
                         These files are the datasets used in the paper "Understanding Dropouts in MOOCs" in AAAI 2019. 
                         <br />
                         Tracking log files (201508-201608, 201608-201708) include all users' learning activities in XuetangX platform from 201508 to 201708. These logs are the supporting data of the analyses in the paper.
@@ -68,7 +72,7 @@
                         Course information includes course start date, course end date, course category and course type. 
                     </p>
                     <p>
-                        Tracking log:
+                        <strong>Tracking log:</strong>
                         <br />
                         <p>Each json file includes user tracking log in a specific period. For example, 20150801-20151101-raw_user_activity.json is the tracking log from 20150801 to 20151101. </p>
 
@@ -87,7 +91,7 @@
                         <p>&nbsp; &nbsp; ],</p>
                         <p>...]</p>
 
-                        dropout prediction dataset:
+                        <strong>Dropout Prediction Dataset:</strong>
                         <br />
                         <p>train_log.csv, test_log.csv:</p>
                         <p>1st column: enroll_id, the id of (user, course) pair.</p>
@@ -97,19 +101,18 @@
                         <p>5th column: action, the type of user activity.</p>
                         <p>6th column: object, the corresonding object of the action.</p>
                         <p>7th column: time, the occurence time of the action.</p>
-                        <p>&nbsp;</p>
                         <p>train_truth.csv, test_truth.csv:</p>
                         <p>1st column: enroll_id, the id of (user, course) pair</p>
                         <p>2nd column: truth, the label of user's dropout (1: dropout, 0: non-dropout).</p>
                          
-                        user profile:
+                        <strong>User Profile:</strong>
                         </br>
                         <p>1st column: user_id, the id of user.</p>
                         <p>2nd column: gender, the gender of user.</p>
                         <p>3st column: education, user's education level.</p>
                         <p>4th column: birth, user's birth year.</p>
                         
-                        course information:
+                        <strong>Course Information:</strong>
                         </br>
                         <p>1st column: id, the id (number) of course, which is used in dropout prediction dataset.</p>
                         <p>2nd column: course_id, the id (string) of course, which is used in tracking log.</p>
@@ -117,19 +120,24 @@
                         <p>4th column: end, course end time.</p>
                         <p>5th column: course_type, course mode (0: instructor-paced course, 1: self-paced course).</p>
                         <p>6th column: category, the category of course.</p>
+
+                        <strong>KDDCUP Data:</strong>
+                        </br>
+                        The full dataset of KDDCUP 15, details can be found in <a href="https://biendata.com/competition/kddcup2015/data/">KDDCUP 2015</a>.
+
                     <a name="Reference" class="tin">
                         <h4>Reference</h4>
                     </a>
                     <p>
                         @inproceedings{feng2019dropout,
                         <br />
-                        title={Understanding Dropouts in MOOCs},
+                        &ensp;&ensp;&ensp;&ensp;title={Understanding Dropouts in MOOCs},
                         <br />
-                        author={Wenzheng Feng and Jie Tang and Tracy Xiao Liu and Shuhuai Zhang and Jian Guan},
+                        &ensp;&ensp;&ensp;&ensp;author={Wenzheng Feng and Jie Tang and Tracy Xiao Liu and Shuhuai Zhang and Jian Guan},
                         <br />
-                        booktitle={Proceedings of the 33rd AAAI Conference on Artificial Intelligence},
+                        &ensp;&ensp;&ensp;&ensp;booktitle={Proceedings of the 33rd AAAI Conference on Artificial Intelligence},
                         <br />
-                        year={2019}
+                        &ensp;&ensp;&ensp;&ensp;year={2019}
                         <br />
                         }
                     </p>
