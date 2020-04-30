@@ -10,10 +10,10 @@ header = ''
 challenge_names = ['kdd-cup-2015']
 challenges = {}
 copy_right = ''
-publication_contents = ['pubs-2019', 'pubs-2018', 'pubs-2017', 'pubs-2016', 'invited-talks']
+publication_contents = ['pubs-2020', 'pubs-2019', 'pubs-2018', 'pubs-2017', 'pubs-2016', 'invited-talks']
 publications = {}
 data = {}
-data_names = ['xiaomu-question', 'concept-extraction', 'prerequisite-relation', 'user-activity', 'course-recommendation']
+data_names = ['xiaomu-question', 'concept-extraction', 'prerequisite-relation', 'user-activity', 'course-recommendation', 'MOOCCube']
 
 def preload():
     global header, challenges, data, publications, copy_right

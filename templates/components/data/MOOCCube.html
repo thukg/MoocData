@@ -1,0 +1,239 @@
+<div id='xiaomu-question'>
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Size</th>
+                <th scope="col">Keywords</th>
+                <th scope="col">Download link</th>
+                <th scope="col">Reference</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><a href="#MOOCCube">MOOCCube</a></td>
+            <td> MB</td>
+            <td>MOOC</td>
+            <td><a href="http://lfs.aminer.cn/misc/moocdata/data/MOOCCube.zip">data</a></td>
+            <td><a href="" target="_blank">ACL'20</a></td>
+        </tr>
+        <tr>
+            <td><a href="#MOOCCube">MOOCCube_DS</a></td>
+            <td>7 KB</td>
+            <td>MOOC</td>
+            <td><a href="http://lfs.aminer.cn/misc/moocdata/data/MOOCCube_DS.zip">data</a></td>
+            <td><a href="" target="_blank">ACL'20</a></td>
+        </tr>
+       </tbody>
+    </table>
+    <div id="detail_infomation">
+        <hr />
+        <div class="dataset">
+            <a name="MOOCCube" class="tin">
+                <h4>MOOCCube</h4>
+            </a>
+            <p>
+                本页面所发布的数据集是ACL2020的论文"MOOCCube: A Large-scale Data Repository for NLP applications in MOOCs"
+                (<a href="" target="_blank">PDF</a>)
+                中所介绍的。 更多细节可以参考论文描述。
+                <br/>
+                This is the dataset introduced in ACL2020 Paper "MOOCCube: A Large-scale Data Repository for NLP applications in MOOCs"
+                (<a href="" target="_blank">PDF</a>).
+                You can find more details through the descriptions in our paper.
+            </p>
+            <hr/>
+            <h5>什么是MOOCCube? / What is MOOCCube?</h5>
+            <p>
+                MOOCCube是面向大规模在线教育有关的自然语言处理、知识图谱、数据挖掘等研究者的开放数据仓库，包含706门真实在线课程、38,181个教学视频、106,056个概念，46,075名MOOC用户的数十万选课、视频观看记录，一个由概念间的先后修，上下位等关系的概念图谱以及包含数十万篇与课内概念有关的学术论文资源的补充资源库。
+                <br/>
+                其概念术语以及实体的描述数据来源于
+                <a href="https://baike.baidu.com/" target="_blank">百度百科</a>，
+                <a href="https://www.wikipedia.org/" target="_blank">维基百科</a>，和
+                <a href="http://www.termonline.cn/" target="_blank">术语在线</a>
+                , 课程数据和学生行为数据来自于
+                <a href="https://xuetangx.com/" target="_blank">学堂在线</a>
+                的真实使用环境。学术论文数据来自于大规模学术搜索引擎
+                <a href="https://www.aminer.cn/" target="_blank">Aminer</a>。
+                这些数据经过自动化筛选、众包标注以及专家标注三个阶段，最终组成了MOOCCube数据仓库。
+            </p>
+            <p>
+                MOOCCube is an open data repository for natural language processing, knowledge graphs, data mining and other researchers who are interested in massive open online courses(MOOCs).
+                It contains 706 MOOC courses, 38,181 videos, 106,056 concepts, and 46,075 real MOOC users. This data source also contains a large-scale Concept Graph and related academic papers as additional resources for further utilization.
+                <br/>
+                The information of our concept graph is extracted from 
+                <a href="https://baike.baidu.com/" target="_blank">Baidubaike</a>,
+                <a href="https://www.wikipedia.org/" target="_blank">Wikipeida</a> and
+                <a href="http://www.termonline.cn/" target="_blank">Termonline</a>.
+                The data of courses and student activities are from the real environment of
+                <a href="https://xuetangx.com/" target="_blank">XuetangX</a>,
+                one of the largest MOOC website in China. The academic resourses are provided by
+                <a href="https://www.aminer.cn/" target="_blank">Aminer</a>,
+                an academic project which provides comprehensive search and mining services for researcher social networks.
+            </p>
+            <hr/>
+            <h5>数据组成和下载 / Data Composition and Download</h5>
+            <p>
+                MOOCCube包含主仓库
+                <a href="http://lfs.aminer.cn/misc/moocdata/data/MOOCCube.zip">MOOCCube</a>
+                和单独课程仓库
+                <a href="http://lfs.aminer.cn/misc/moocdata/data/MOOCCube_DS.zip">MOOCCube_DS</a>
+                两部分:
+                <ul>
+                    <li>
+                        主仓库：论文中描述的MOOCCube数据仓库，以概念、课程、学生行为作为三个主要维度，支持多种数据组合方式，用以支持不同的教学研究需要，其架构图和数据描述如下所示：
+                    </li>
+                    <li>
+                        单独课程仓库: MOOCCube_DS是根据"数据结构"课程的实际教学需要，精细化标注的MOOCCube的特殊组成部分，其包含的信息比主仓库的课程维度更多，但是数据量较少，目前本项目仍在更新中，请继续关注！
+                    </li>
+                </ul>
+            </p>
+            <p>
+                MOOCCube contains two parts: main repository
+                <a href="http://lfs.aminer.cn/misc/moocdata/data/MOOCCube.zip">MOOCCube</a>
+                and special course repository
+                <a href="http://lfs.aminer.cn/misc/moocdata/data/MOOCCube_DS.zip">MOOCCube_DS</a>:
+                <ul>
+                    <li>
+                        Main Repository: The MOOCCube data repository described in the paper, which takes concepts, courses, and student behavior as the three main dimensions, and provides multiple data combination methods to support different teaching and research needs.
+                    </li>
+                    <li>
+                        Special Course Repository: MOOCCube_DS is a special component of the MOOCCube, which is refined and annotated according to the actual teaching needs of the "data structure" course. It contains more information than the main repository. Please stay tuned!
+                    </li>
+                </ul>
+            </p>
+            <img src="/static/picture/ACL20-Yu-et-al-MOOCCube.png" width="980px">
+            <hr/>
+            <h5>实体 / Entities</h5>
+            <p>
+                MOOCCube数据集包含以下实体类型：
+                <br/>
+                MOOCCube dataset contains these types of entities:
+            </p>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">type</th>
+                        <th scope="col">prefix of id</th>
+                        <th scope="col">important fields</th>
+                        <th scope="col">file</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>concept</td>
+                    <td>K_</td>
+                    <td>name, en, explanation</td>
+                    <td>concept.json</td>
+                </tr>
+                <tr>
+                    <td>course</td>
+                    <td>C_</td>
+                    <td>name, about, core_id, video_order, video_name, chapter</td>
+                    <td>course.json</td>
+                </tr>
+                <tr>
+                    <td>paper</td>
+                    <td>P_</td>
+                    <td>title, author, venue, abstract, year, num_citation, ...</td>
+                    <td>paper.json</td>
+                </tr>
+                <tr>
+                    <td>school</td>
+                    <td>S_</td>
+                    <td>	name, about</td>
+                    <td>school.json</td>
+                </tr>
+                <tr>
+                    <td>teacher</td>
+                    <td>T_</td>
+                    <td>name, about</td>
+                    <td>teacher.json</td>
+                </tr>
+                <tr>
+                    <td>user</td>
+                    <td>U_</td>
+                    <td>name, course_order, enroll_time</td>
+                    <td>user.json</td>
+                </tr>
+                <tr>
+                    <td>video</td>
+                    <td>V_</td>
+                    <td>name, duration, start, end, text</td>
+                    <td>video.json</td>
+                </tr>
+                <tr>
+                    <td>taxonomy</td>
+                    <td>K_T_</td>
+                    <td>name</td>
+                    <td>concept.json</td>
+                </tr>
+                </tbody>
+            </table>
+            <p>
+                两门课程的core_id相同说明它们的video集合有交集，user的name字段是随机生成的名字。
+                <br/>
+                Two courses will have same core_id if their video sets intersect.
+                <br/>
+                Name field of user entities is randomly generated.
+            </ul>
+            <hr/>
+            <h5>关系 / Relations</h5>
+            <ul>
+                <li>concept-field</li>
+                <li>concept-paper</li>
+                <li>course-concept</li>
+                <li>course-video</li>
+                <li>parent-son (taxonomy)</li>
+                <li>prerequisite-dependency</li>
+                <li>school-course</li>
+                <li>school-teacher</li>
+                <li>teacher-course</li>
+                <li>user-course</li>
+                <li>user-video</li>
+                <li>video-concept</li>
+            </ul>
+            <hr/>
+            <h5>补充文件 / Additional information</h5>
+            <ul>
+                <li>concept_information: more text data of each concept.</li>
+                <li>user_video_act: filtered watching video behavior of users.</li>
+                <li>prerequisite_prediction: more prerequisite relations generated by a GCN classifier on a small subset of concepts.</li>
+            </ul>
+            <hr/>
+            <h5>MOOC问答数据 / MOOCQA</h5>
+            <ul>
+            </ul>
+            <hr/>
+            <h5>MOOCCube应用 / The applications of MOOCCube</h5>
+            <p>
+                MOOCCube中的数据可以支持多种与MOOC有关的研究，包括:
+            </p>
+            <ul>
+                <li><b>课程推荐</b></li>
+                <li><b>学生行为预测</b></li>
+                <li><b>课程概念抽取</b></li>
+                <li><b>先后修关系抽取</b></li>
+                <li>...</li>
+            </ul>
+            <p>
+                MOOCCube can provide datasets to support multiple research topics related to MOOC, including:
+            </p>
+            <ul>
+                <li><b>Course Recommendation</b></li>
+                <li><b>Student Performance Prediction</b></li>
+                <li><b>Course Concept Extraction</b></li>
+                <li><b>Prerequisite Relation Learning</b></li>
+                <li>...</li>
+            </ul>
+            <hr/>
+            <h5>学堂小木 / Xiaomu</h5>
+            <p>
+                小木是一个挂载于学堂在线MOOC主站上的智能机器人，提供课程答疑、主动提问等教学辅助功能，其后台知识库的知识概念部分即主要由MOOCCube提供。
+                <br/>
+                Xiaomu is an intelligent robot mounted on the XuetangX main station, providing teaching auxiliary functions such as course question answering and active questioning. The knowledge concept part of its background knowledge base is mainly provided by MOOCCube.
+            </p>
+            <img src="/static/picture/xiaomu.png" height="400px">
+        </div>
+    </div>
+</div>
+ 
