@@ -38,6 +38,38 @@
                 This is the dataset introduced in ACL2020 Paper "MOOCCube: A Large-scale Data Repository for NLP applications in MOOCs". You can find more details through the descriptions in our paper.
             </p>
             <hr/>
+			<h5>FAQ</h5>
+			<p>
+				1. 先后修对在两者中的区别 / pairs in prerequisite-dependency.json and prerequisite-prediction.json.
+				<br/>
+				prerequisite-dependency.json提供了人工标注的ground-truth先后修对；prerequisite-prediction.json则是在此基础上使用神经网络模型预测的结果，label为-1/0/1分别表示没有人工标注的结果/人工标注为无关/人工标注为是先后修关系，predict给出了模型预测label是0/1的概率。
+				<br/>
+				prerequisite-dependency.json provides manually labeled ground-truths of prerequisite pairs between concepts.
+				prerequisite-prediction.json is the prediction result by a neural network model. The "label" field has value of -1, 0, or 1, indicating no manually labeled result / manually labeled as irrelevant / manually labeled as a prerequisite-dependency pair, respectively.
+				The "predict" field provides the probablity of the label to be 0 or 1 by the model.
+			</p>
+			<p>
+				2. 字段在user_video_act.json中的意义 / fields in user_video_act.json.
+				<br/>
+				watching_count：对该片段用户看了几次（每次不一定看整个片段），
+				video_duration：视频总长度，
+				video_progress_time：用户播放视频的时长（包括倍速观看），
+				video_start_time：用户观看开始的位置，
+				video_end_time：用户观看结束的位置，
+				local_watching_time：用户实际观看时长，
+				local_start_time：用户最早开始的时间，
+				local_end_time：用户最晚结束的时间。
+				<br/>
+				watching_count: watched times of the user (may not watch the whole segment),
+				video_duration: total length of the video,
+				video_progress_time: how long the user played the video (including speed up watching),
+				video_start_time: the position where the user started watching,
+				video_end_time: the position where the user ended watching,
+				local_watching_time: the total watching time of the user,
+				local_start_time: the earliest time the user started watching,
+				local_end_time: the latest time the user ended watching.
+			</p>
+			<hr/>
             <h5>什么是MOOCCube? / What is MOOCCube?</h5>
             <p>
                 MOOCCube是面向大规模在线教育有关的自然语言处理、知识图谱、数据挖掘等研究者的开放数据仓库，包含706门真实在线课程、38,181个教学视频、114,563个概念、199,199名MOOC用户的数十万选课、视频观看记录，一个由概念间的先后修，上下位等关系的概念图谱以及包含数十万篇与课内概念有关的学术论文资源的补充资源库。
